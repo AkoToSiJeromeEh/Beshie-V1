@@ -94,7 +94,7 @@
     color: rgb(255, 255, 255);
     box-shadow: 0px 2px 5px #FF9899;
 }
-@media (width < 380px) {
+@media (width < 400px) {
     .input-area {
         width: 100%;
     }
@@ -102,6 +102,6 @@
         padding-inline: 5px;
     }
     .card-container {
-        width: 60%; 
+        width: 70%; 
     }
 }

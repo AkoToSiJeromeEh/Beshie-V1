@@ -35,16 +35,13 @@ function Main() {
     });
     setTextWithEmojis(textWithEmojis.join(' '));
   }
-  
-  
+
   function handleInputChange(e) {
     const value = e.target.value;
     setInput(value);
     updateTextWithEmojis(value);
   }
   
-
-
   return (
     <React.Fragment>
       <Navbar ToggleDark={ToggleDark} isDark={Darken} />

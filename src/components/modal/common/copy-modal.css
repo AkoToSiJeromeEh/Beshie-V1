@@ -75,3 +75,24 @@
       opacity: 1;
   }
 }
+@media (width  < 760px) {
+  .modal-shadow {
+  
+    width: min(60%, 55rem);
+ 
+  }
+  .modal-button {
+    width: 60%;
+  }
+}
+@media (width  < 760px) {
+  .modal-shadow {
+  
+    width: min(50%, 55rem);
+ 
+  }
+  .modal-button {
+    width: 100%;
+  }
+
+}
