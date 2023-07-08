@@ -4,6 +4,7 @@
     justify-content: center;
     display: flex;
     transition: 0.8s;
+    position: relative;
 }
 /* Toggle Dark */
 .dark{background-color: black;  transition: 0.8s;}

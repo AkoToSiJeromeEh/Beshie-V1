@@ -1,0 +1,77 @@
+.modal-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(49, 48, 48, 0.499);
+  backdrop-filter: blur(5px);
+  font-family: "Fraunces", serif;
+  visibility: hidden;
+  z-index: 1;
+}
+.modal-shadow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  width: min(40%, 55rem);
+  padding: max(10vh, 1rem);
+  border-radius: 0.5rem;
+  color: rgb(255, 255, 255);
+  animation: 1.5s opacitesy ease forwards;
+}
+
+.modal-context {
+  padding-bottom: max(3vh, 1rem);
+}
+.fa-check-to-slot {
+  color: #ff9899;
+  font-size: 2.15rem;
+}
+.modal-context > h3 {
+  font-size: clamp(1.55rem, 5vh + 1rem, 1.75rem);
+  font-variant: small-caps;
+}
+.modal-button {
+  width: 40%;
+}
+.modal-button > button {
+  width: 100%;
+  padding: min(1.25vh, 1.55rem);
+  font-variant: small-caps;
+  background-color: rgb(200, 91, 117);
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.modal-button > button:hover {
+  background-color: rgb(255, 152, 176);
+}
+/* Toggle Dark */
+.white-shadow {
+  background-color: white;
+  color: black;
+  transition: 0.8s;
+}
+/* Toggle Modal */
+.show-modal{
+  visibility: visible;
+  animation: 1.5s opacitesy ease forwards;
+}
+/* Animation */
+@keyframes opacitesy {
+     
+  0% {
+     opacity: 0.4;
+  }
+  
+  100%{
+      opacity: 1;
+  }
+}

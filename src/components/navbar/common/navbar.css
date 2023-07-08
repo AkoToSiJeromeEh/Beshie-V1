@@ -68,6 +68,11 @@
   margin-left: auto;
   background-image: url(./image/icons8-moon-48.png);
 }
+@media (width < 380px) {
+  .nav-title > h1{
 
+    font-size: 1.65rem;
+  }
+}
 
 
