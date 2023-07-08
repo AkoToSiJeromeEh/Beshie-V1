@@ -1,0 +1,23 @@
+.card-container{
+
+    display: flex;
+    flex-direction: column;
+    width: min(50% , 55rem);
+    box-shadow: 0px 2px 5px black;
+    border-radius: 0.5rem;
+    align-items: center;
+    padding: max(4vh , 1rem);
+}
+.card-title > h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.card-function{
+    margin-block: min(5vh , 1.25rem);
+    align-self: self-start;
+}
+.card-function > textarea{
+
+    resize: none;
+}

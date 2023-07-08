@@ -1,0 +1,27 @@
+
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    image-rendering: optimizeQuality;
+    
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
+}
+main {
+    
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

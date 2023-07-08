@@ -1,0 +1,77 @@
+/* Nav Main Styles */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(250, 244, 250, 0.805);
+  padding: max(3vh, 0.8rem);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.nav-title > h1 {
+  vertical-align: bottom;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-variant-caps: small-caps;
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  text-shadow: 0px 2px 2px rgb(22, 21, 22);
+}
+.nav-title > h1 > span {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.toggler-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: black;
+  width: 3.2rem;
+  border-radius: 1.563rem;
+  padding: max(0.1rem);
+  cursor: pointer;
+}
+.btn-circle {
+  vertical-align: middle;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 0.8rem;
+  padding: 0.675rem;
+  border-radius: 1.563rem;
+  cursor: pointer;
+  background-image: url(./icons8-sun-48.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Dark Toggle */
+.nav-dark {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  animation: 1.5s smooth-transition ease-in-out;
+}
+.dark {
+  background-color: rgb(255, 255, 255);
+}
+.align-end {
+  background-color: black;
+  margin-left: auto;
+  background-image: url(./icons8-moon-48.png);
+}
+
+/* Transitions */
+@keyframes smooth-transition {
+  0% {
+    background-color: rgba(250, 244, 250, 0.805);
+    transition-duration: 1ms;
+  }
+  100% {
+    opacity: 1;
+    transition-duration: 5ms;
+    background-color: rgba(0, 0, 0, 0.805);
+  }
+}
