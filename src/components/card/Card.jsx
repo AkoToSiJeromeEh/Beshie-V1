@@ -1,10 +1,9 @@
-import './common/card.css'
 
 import PropTypes from "prop-types";
-
+import './common/card.css'
 export default function Card(props) {
 
-  const {isDark} = props;
+  const {isDark , inputChange , userInput , handleCopy } = props;
   
   return (
 
@@ -13,16 +12,21 @@ export default function Card(props) {
         <h2>Bakit Malungkot Beshie Ko</h2>
       </div>
          <div className="input-area">
-         <textarea type="text" placeholder='🤸‍♂️ Type Muna Beshie' />
+         <textarea 
+         onChange={inputChange}
+         value={userInput}
+         type="text" 
+         placeholder='🤸‍♂️ Type Muna Beshie' 
+         />
          </div>
        <div className="result-input">
        <p>
-       BAKIT MALUNGKOT ANG BESHIE KO
+        {userInput}
        </p>
        </div>
       <div className="btn-cont">
-      <button className={isDark ? 'btn-dark' : ''}>
-      <i className="fa-regular fa-clipboard fa-lg"></i>
+      <button onClick={handleCopy} className={isDark ? 'btn-dark' : ''}>
+        <i className="fa-regular fa-clipboard fa-lg"></i> 
       </button>
       </div>
     </div>
@@ -30,6 +34,10 @@ export default function Card(props) {
   )
 }
 Card.propTypes = {
-  isDark: PropTypes.bool.isRequired
+  isDark: PropTypes.bool.isRequired,
+  inputChange : PropTypes.func ,
+  userInput : PropTypes.string.isRequired,
+  handleCopy : PropTypes.func ,
+  copyText : PropTypes.string.isRequired
 };
 

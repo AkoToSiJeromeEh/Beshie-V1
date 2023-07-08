@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100vh;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeSpeed;
