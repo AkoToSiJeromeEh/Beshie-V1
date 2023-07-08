@@ -6,7 +6,9 @@
   justify-content: space-between;
   background-color: rgba(250, 244, 250, 0.805);
   padding: max(3vh, 0.8rem);
+  transition: 0.8s;
   position: fixed;
+  z-index: 100;
   left: 0;
   right: 0;
   top: 0;
@@ -17,8 +19,9 @@
   font-weight: 700;
   font-variant-caps: small-caps;
   letter-spacing: 1px;
-  font-size: 2.25rem;
+  font-size: clamp(1.25rem , 8vh + 1rem , 2.25rem);
   text-shadow: 0px 2px 2px rgb(22, 21, 22);
+  color: #FF9899;
 }
 .nav-title > h1 > span {
   font-size: 1rem;
@@ -31,6 +34,7 @@
   background-color: black;
   width: 3.2rem;
   border-radius: 1.563rem;
+  transition: 0.8s;
   padding: max(0.1rem);
   cursor: pointer;
 }
@@ -42,7 +46,7 @@
   padding: 0.675rem;
   border-radius: 1.563rem;
   cursor: pointer;
-  background-image: url(./icons8-sun-48.png);
+  background-image: url(./image/icons8-sun-48.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -50,28 +54,20 @@
 
 /* Dark Toggle */
 .nav-dark {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(33, 33, 33);
   color: white;
-  animation: 1.5s smooth-transition ease-in-out;
+  transition: 0.8s;
+
 }
-.dark {
+.dark-toggle {
   background-color: rgb(255, 255, 255);
+  transition: 0.8s;
 }
 .align-end {
   background-color: black;
   margin-left: auto;
-  background-image: url(./icons8-moon-48.png);
+  background-image: url(./image/icons8-moon-48.png);
 }
 
-/* Transitions */
-@keyframes smooth-transition {
-  0% {
-    background-color: rgba(250, 244, 250, 0.805);
-    transition-duration: 1ms;
-  }
-  100% {
-    opacity: 1;
-    transition-duration: 5ms;
-    background-color: rgba(0, 0, 0, 0.805);
-  }
-}
+
+

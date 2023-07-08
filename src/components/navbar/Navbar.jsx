@@ -11,7 +11,7 @@ export default function Navbar(props) {
       </div>
       <div className="nav-darkmode">
         <div
-          className={isDark ? "toggler-container dark " : "toggler-container"}
+          className={isDark ? "toggler-container dark-toggle " : "toggler-container"}
           onClick={ToggleDark}
         >
           <button

@@ -1,23 +1,90 @@
-.card-container{
-
+.card-container {
+    font-family: 'Fraunces', serif;
     display: flex;
     flex-direction: column;
-    width: min(50% , 55rem);
+    width: min(50%, 55rem);
     box-shadow: 0px 2px 5px black;
     border-radius: 0.5rem;
     align-items: center;
-    padding: max(4vh , 1rem);
+    text-align: center;
+    padding: max(4vh, 1rem);
+    position: relative;
 }
-.card-title > h2 {
-    font-family: "Montserrat", sans-serif;
+
+.card-title {
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    padding-bottom: max(2.5vh, 1rem);
+}
+
+.card-title>h2 {
+    font-variant: small-caps;
+    font-size: clamp(1.55rem, 5vh + 1rem, 1.95rem);
     font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    color: #FF9899;
+}
+
+.input-area {
+    width: 90%;
+    margin-block: min(5vh, 1.25rem);
+}
+
+.input-area>textarea {
+    resize: none;
+    width: 100%;
+    padding-block: max(3vh, 1rem);
+    padding-inline: 0.5rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    outline: ghostwhite;
+}
+
+::placeholder {
+    color: black;
+}
+
+.result-input {
+    width: 90%;
+    word-break: break-all;
+    padding-block: max(2.5vh, 1rem);
+}
+
+.result-input>p {
+
+    font-size: clamp(1.10rem, 5vh + 1rem, 1.15rem);
     letter-spacing: 0.5px;
 }
-.card-function{
-    margin-block: min(5vh , 1.25rem);
-    align-self: self-start;
-}
-.card-function > textarea{
 
-    resize: none;
+.btn-cont {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    right: 0;
+}
+
+.btn-cont > button {
+    width: 2.65rem;
+    padding: max(1vh, 0.5rem);
+    border-radius: 3.125rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 2px 5px black;
+    cursor: pointer;
+}
+
+/* Toggle Dark */
+.cont-dark {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 2px 5px #FF9899;
+    transition: 0.8s;
+}
+
+.btn-cont > .btn-dark {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px #FF9899;
 }

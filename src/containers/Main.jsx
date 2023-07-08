@@ -1,5 +1,7 @@
 import Navbar from '../components/Navbar'
 import Card from '../components/Card'
+import Footer from '../components/Footer'
+import './common/main.css'
 import React, {useState} from 'react'
 
 function Main() {
@@ -16,9 +18,12 @@ function Main() {
     ToggleDark={ToggleDark}
     isDark={Darken}
     />
-    <main>
-        <Card/>
+    <main className={Darken ? 'main-container dark' : 'main-container'}>
+        <Card
+        isDark={Darken}
+        />
     </main>
+    <Footer/>
     </React.Fragment>
   )
 }
